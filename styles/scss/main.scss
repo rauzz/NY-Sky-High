@@ -1,0 +1,112 @@
+// font import
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&family=VT323&display=swap');
+
+@import 'variables';
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   // outline: 1px solid rgb(0, 102, 255);
+}
+
+html {
+   scroll-behavior: smooth;
+   font-size: 10px;
+}
+
+body {
+   background-color: $colorBackground;
+}
+
+.max1300 {
+   max-width: 1300px;
+   margin: auto;
+}
+
+a {
+   text-decoration: none;
+}
+
+h2 {
+   font-family: 'VT323', monospace;
+   font-size: 4.4rem;
+   color: $colorWhite;
+}
+
+h3 {
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 4rem;
+   color: $colorWhite;
+}
+
+p {
+   font-family: 'IBM Plex Mono', monospace;
+   font-size: 1.6rem;
+   color: $colorWhite;
+   font-weight: 300;
+   line-height: 1.5
+}
+
+.bold {
+   font-weight: 600;
+}
+
+span.shadow {
+   position: relative;
+}
+
+span.shadow::before {
+   position: absolute;
+   top: -4px;
+   left: 4px;
+   background: -webkit-linear-gradient(#a800c5, #ff9823);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   z-index: -1;
+}
+
+span.shadow::after {
+   position: absolute;
+   top: -8px;
+   left: 7px;
+   background: -webkit-linear-gradient(#a800c5, #ff9823);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   z-index: -2;
+}
+
+.color1 {
+   color: $colorBold1;
+}
+
+.color2 {
+   color: $colorBold2;
+}
+
+.color3 {
+   color: $colorBold3;
+}
+
+.color4 {
+   color: $colorBold4;
+}
+
+.color5 {
+   color: $colorBold5;
+}
+
+@keyframes rotate {
+   100% {
+      rotate: 360deg;
+   }
+}
+
+
+@import "nav.scss";
+@import "hero.scss";
+@import "history.scss";
+@import "architecture.scss";
+@import "iconic.scss";
+@import "gallery.scss";
+@import "footer.scss";

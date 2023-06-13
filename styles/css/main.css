@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(33, 32, 34);
+}
+
+.max1300 {
+  max-width: 1300px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "VT323", monospace;
+  font-size: 4.4rem;
+  color: #EEE;
+}
+
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 4rem;
+  color: #EEE;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.6rem;
+  color: #EEE;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+span.shadow {
+  position: relative;
+}
+
+span.shadow::before {
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  background: -webkit-linear-gradient(#a800c5, #ff9823);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+}
+
+span.shadow::after {
+  position: absolute;
+  top: -8px;
+  left: 7px;
+  background: -webkit-linear-gradient(#a800c5, #ff9823);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -2;
+}
+
+.color1 {
+  color: #992F8A;
+}
+
+.color2 {
+  color: #BB2885;
+}
+
+.color3 {
+  color: #DD3176;
+}
+
+.color4 {
+  color: #EC6256;
+}
+
+.color5 {
+  color: #FC9733;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}
+nav {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(33, 32, 34, 0.6);
+  z-index: 10;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+nav .max1300 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .max1300 img {
+  height: 7rem;
+}
+nav .max1300 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6rem;
+}
+nav .max1300 ul li {
+  list-style: none;
+}
+nav .max1300 ul li a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.2rem;
+  color: #EEE;
+}
+
+#hero {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7rem;
+}
+#hero header {
+  color: #EEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rem 0 5rem 0;
+}
+#hero header h1 {
+  font-family: "VT323", monospace;
+  font-size: 5.8rem;
+  text-align: center;
+}
+#hero header h1 span.manhattan::before,
+#hero header h1 span.manhattan::after {
+  content: "Manhattan";
+}
+#hero header h4 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.6rem;
+  font-weight: 300;
+  padding: 2.6rem 0 8rem 0;
+  text-align: center;
+}
+#hero header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(117, 53, 143)), color-stop(50%, rgb(216, 34, 128)), to(rgb(255, 163, 43)));
+  background: linear-gradient(180deg, rgb(117, 53, 143) 0%, rgb(216, 34, 128) 50%, rgb(255, 163, 43) 100%);
+  width: 6rem;
+  height: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#hero img.hero {
+  display: block;
+  width: 100%;
+}
+
+#history {
+  padding: 25rem 0;
+}
+#history .max1300 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#history .max1300 img.history {
+  width: 56rem;
+}
+#history .max1300 .historyText header {
+  display: inline-block;
+  position: relative;
+}
+#history .max1300 .historyText header h2 {
+  margin-bottom: 6rem;
+}
+#history .max1300 .historyText header h2 span.history {
+  line-break: anywhere;
+}
+#history .max1300 .historyText header h2 span.history::before,
+#history .max1300 .historyText header h2 span.history::after {
+  content: "A brief look into the past";
+}
+#history .max1300 .historyText header img {
+  position: absolute;
+  top: -1.9rem;
+  right: 0rem;
+  z-index: -3;
+  width: 7rem;
+  -webkit-animation: rotate 20s linear infinite;
+          animation: rotate 20s linear infinite;
+}/*# sourceMappingURL=main.css.map */

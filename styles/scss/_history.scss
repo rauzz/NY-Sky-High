@@ -1,0 +1,43 @@
+@import "variables";
+
+#history {
+	padding: 25rem 0;
+
+	.max1300 {
+		display: flex;
+		gap: 5rem;
+		align-items: center;
+
+		img.history {
+         width:56rem;
+		}
+
+		.historyText {
+			header {
+            display: inline-block;
+            position: relative;
+				h2 {
+					margin-bottom: 6rem;
+
+					span.history {
+						line-break: anywhere;
+					}
+
+					span.history::before,
+					span.history::after {
+						content: "A brief look into the past";
+					}
+				}
+
+            img {
+               position: absolute;
+               top: -1.9rem;
+               right: 0rem;
+               z-index: -3;
+               width: 7rem;
+               animation: rotate 20s linear infinite;
+            }
+			}
+		}
+	}
+}
