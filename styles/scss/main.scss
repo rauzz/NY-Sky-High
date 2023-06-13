@@ -35,8 +35,8 @@ h2 {
 }
 
 h3 {
-   font-family: 'IBM Plex Mono', monospace;
-   font-size: 4rem;
+   font-family: 'VT323', monospace;
+   font-size: 3.8rem;
    color: $colorWhite;
 }
 
@@ -45,7 +45,7 @@ p {
    font-size: 1.6rem;
    color: $colorWhite;
    font-weight: 300;
-   line-height: 1.5
+   line-height: 1.5;
 }
 
 .bold {
@@ -61,6 +61,7 @@ span.shadow::before {
    top: -4px;
    left: 4px;
    background: -webkit-linear-gradient(#a800c5, #ff9823);
+   background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    z-index: -1;
@@ -71,6 +72,7 @@ span.shadow::after {
    top: -8px;
    left: 7px;
    background: -webkit-linear-gradient(#a800c5, #ff9823);
+   background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    z-index: -2;

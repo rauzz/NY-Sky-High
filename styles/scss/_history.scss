@@ -3,7 +3,7 @@
 #history {
 	padding: 25rem 0;
 
-	.max1300 {
+	.historyWrap {
 		display: flex;
 		gap: 5rem;
 		align-items: center;
@@ -13,15 +13,13 @@
 		}
 
 		.historyText {
-			header {
+
+			header.historyHeader {
             display: inline-block;
             position: relative;
+
 				h2 {
 					margin-bottom: 6rem;
-
-					span.history {
-						line-break: anywhere;
-					}
 
 					span.history::before,
 					span.history::after {
@@ -29,13 +27,13 @@
 					}
 				}
 
-            img {
+            img.hexagon {
                position: absolute;
-               top: -1.9rem;
-               right: 0rem;
+               top: -1.7rem;
+               right: 0.4rem;
                z-index: -3;
-               width: 7rem;
-               animation: rotate 20s linear infinite;
+               height: 7rem;
+               animation: rotate 25s linear infinite;
             }
 			}
 		}
