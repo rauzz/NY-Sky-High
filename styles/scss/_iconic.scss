@@ -1,1 +1,67 @@
 @import "variables";
+
+#iconic {
+
+   .iconicWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+
+      .iconicHeader {
+         position: relative;
+
+         h2 {
+            margin-bottom: 6rem;
+
+            span.iconic {
+               width: 43rem;
+            }
+
+            span.iconic::before,
+            span.iconic::after {
+               content: "Three most iconic pieces";
+               width: inherit;
+            }
+         }
+
+         img.rectangle {
+            position: absolute;
+            top: -100%;
+            height: 8rem;
+            left: calc(50% - 3.5rem);
+            animation: rotate 25s linear infinite;
+         }
+      }
+
+      .buildingWrap {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 11rem 0;
+         gap: 5rem;
+         
+         img {
+            width: 24rem;
+         }
+         
+         .buildingText {
+            width: 40%;
+            margin-left: 3rem;
+
+            h3 {
+               margin: 13rem 0;
+            }
+         }
+      }
+
+      .buildingWrap:nth-child(3) {
+         flex-direction: row-reverse;
+
+         .owtcText {
+            margin: 0 3rem 0 0;
+         }
+      }
+   }
+}

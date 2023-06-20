@@ -1,6 +1,7 @@
 @import "variables";
 
 #architecture {
+   padding: 25rem 0 5rem 0;
 
    .architectureWrap {
       display: flex;
@@ -12,7 +13,7 @@
          text-decoration: underline;
       }
       
-      header.architectureHeader {
+      .architectureHeader {
          justify-content: center;
          position: relative;
          
@@ -21,7 +22,7 @@
 
             span.architecture {
                line-break: anywhere;
-               width: 360px;
+               width: 36rem;
             }
             
             span.architecture::before,
@@ -56,6 +57,23 @@
             display: flex;
             align-items: center;
             gap: 5rem;
+         }
+      }
+      .breakWrap {
+         position: relative;
+         max-width: 60rem;
+         margin: 7rem 0 20rem 0;
+
+         img.mainImg {
+            width: 100%;
+         }
+
+         img.crossImg {
+            position: absolute;
+            width: 8%;
+            bottom: 30%;
+            right: 15%;
+            animation: rotate 25s linear infinite;
          }
       }
    }

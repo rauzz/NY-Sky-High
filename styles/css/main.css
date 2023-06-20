@@ -15,8 +15,8 @@ body {
   background-color: rgb(33, 32, 34);
 }
 
-.max1300 {
-  max-width: 1300px;
+.max1200 {
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -116,7 +116,7 @@ nav {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
 }
-nav .max1300 {
+nav .max1200 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,10 +124,10 @@ nav .max1300 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav .max1300 img {
+nav .max1200 img {
   height: 7rem;
 }
-nav .max1300 ul {
+nav .max1200 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,10 +139,10 @@ nav .max1300 ul {
           align-items: center;
   gap: 6rem;
 }
-nav .max1300 ul li {
+nav .max1200 ul li {
   list-style: none;
 }
-nav .max1300 ul li a {
+nav .max1200 ul li a {
   font-family: "IBM Plex Mono", monospace;
   font-size: 2.2rem;
   color: #EEE;
@@ -209,7 +209,7 @@ nav .max1300 ul li a {
 }
 
 #history {
-  padding: 25rem 0;
+  padding: 25rem 0 5rem 0;
 }
 #history .historyWrap {
   display: -webkit-box;
@@ -244,6 +244,9 @@ nav .max1300 ul li a {
           animation: rotate 25s linear infinite;
 }
 
+#architecture {
+  padding: 25rem 0 5rem 0;
+}
 #architecture .architectureWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,25 +265,25 @@ nav .max1300 ul li a {
 #architecture .architectureWrap a {
   text-decoration: underline;
 }
-#architecture .architectureWrap header.architectureHeader {
+#architecture .architectureWrap .architectureHeader {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
 }
-#architecture .architectureWrap header.architectureHeader h2 {
+#architecture .architectureWrap .architectureHeader h2 {
   margin: 0 0 6rem 0;
 }
-#architecture .architectureWrap header.architectureHeader h2 span.architecture {
+#architecture .architectureWrap .architectureHeader h2 span.architecture {
   line-break: anywhere;
-  width: 360px;
+  width: 36rem;
 }
-#architecture .architectureWrap header.architectureHeader h2 span.architecture::before,
-#architecture .architectureWrap header.architectureHeader h2 span.architecture::after {
+#architecture .architectureWrap .architectureHeader h2 span.architecture::before,
+#architecture .architectureWrap .architectureHeader h2 span.architecture::after {
   content: "Architectural styles";
   width: inherit;
 }
-#architecture .architectureWrap header.architectureHeader img.pentagon {
+#architecture .architectureWrap .architectureHeader img.pentagon {
   position: absolute;
   height: 7rem;
   top: -1.7rem;
@@ -313,4 +316,87 @@ nav .max1300 ul li a {
       -ms-flex-align: center;
           align-items: center;
   gap: 5rem;
+}
+#architecture .architectureWrap .breakWrap {
+  position: relative;
+  max-width: 60rem;
+  margin: 7rem 0 20rem 0;
+}
+#architecture .architectureWrap .breakWrap img.mainImg {
+  width: 100%;
+}
+#architecture .architectureWrap .breakWrap img.crossImg {
+  position: absolute;
+  width: 8%;
+  bottom: 30%;
+  right: 15%;
+  -webkit-animation: rotate 25s linear infinite;
+          animation: rotate 25s linear infinite;
+}
+
+#iconic .iconicWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#iconic .iconicWrap .iconicHeader {
+  position: relative;
+}
+#iconic .iconicWrap .iconicHeader h2 {
+  margin-bottom: 6rem;
+}
+#iconic .iconicWrap .iconicHeader h2 span.iconic {
+  width: 43rem;
+}
+#iconic .iconicWrap .iconicHeader h2 span.iconic::before,
+#iconic .iconicWrap .iconicHeader h2 span.iconic::after {
+  content: "Three most iconic pieces";
+  width: inherit;
+}
+#iconic .iconicWrap .iconicHeader img.rectangle {
+  position: absolute;
+  top: -100%;
+  height: 8rem;
+  left: calc(50% - 3.5rem);
+  -webkit-animation: rotate 25s linear infinite;
+          animation: rotate 25s linear infinite;
+}
+#iconic .iconicWrap .buildingWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 11rem 0;
+  gap: 5rem;
+}
+#iconic .iconicWrap .buildingWrap img {
+  width: 24rem;
+}
+#iconic .iconicWrap .buildingWrap .buildingText {
+  width: 40%;
+  margin-left: 3rem;
+}
+#iconic .iconicWrap .buildingWrap .buildingText h3 {
+  margin: 13rem 0;
+}
+#iconic .iconicWrap .buildingWrap:nth-child(3) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#iconic .iconicWrap .buildingWrap:nth-child(3) .owtcText {
+  margin: 0 3rem 0 0;
 }/*# sourceMappingURL=main.css.map */
