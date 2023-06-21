@@ -9,7 +9,7 @@
 		align-items: center;
 
 		img.history {
-         width:56rem;
+         width: 35%;
 		}
 
 		.historyText {
@@ -17,6 +17,7 @@
 			header.historyHeader {
             display: inline-block;
             position: relative;
+            
 
 				h2 {
 					margin-bottom: 6rem;
@@ -29,8 +30,8 @@
 
             img.hexagon {
                position: absolute;
-               top: -1.7rem;
-               right: 0.4rem;
+               top: -1.5rem;
+               left: .3rem;
                z-index: -3;
                height: 7rem;
                animation: rotate 25s linear infinite;

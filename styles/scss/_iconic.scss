@@ -1,6 +1,7 @@
 @import "variables";
 
 #iconic {
+   margin-bottom: 10rem;
 
    .iconicWrap {
       display: flex;
@@ -16,7 +17,7 @@
             margin-bottom: 6rem;
 
             span.iconic {
-               width: 43rem;
+               width: 47rem;
             }
 
             span.iconic::before,
@@ -29,7 +30,7 @@
          img.rectangle {
             position: absolute;
             top: -100%;
-            height: 8rem;
+            height: 9rem;
             left: calc(50% - 3.5rem);
             animation: rotate 25s linear infinite;
          }
@@ -47,7 +48,7 @@
          }
          
          .buildingText {
-            width: 40%;
+            width: 50%;
             margin-left: 3rem;
 
             h3 {

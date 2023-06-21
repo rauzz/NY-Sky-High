@@ -11,14 +11,21 @@
       flex-direction: column;
       align-items: center;
       padding: 10rem 0 5rem 0;
+      overflow: hidden;
       
       h1 {
          font-family: 'VT323', monospace;
          font-size: 5.8rem;
          text-align: center;
+         text-wrap: balance;
 
+         span.manhattan {
+            line-break: strict;
+         }
+         
          span.manhattan::before,
          span.manhattan::after {
+            line-break: strict;
             content: 'Manhattan';
 
          }

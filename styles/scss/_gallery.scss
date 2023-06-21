@@ -5,12 +5,33 @@
    .galleryWrap {
 
       .galleryHeader {
+         position: relative;
+         width: 27rem;
+         margin: 6rem auto 10rem auto;
          
          h2 {
+            width: 29rem;
+
 
             span.gallery {
-               
+               width: inherit;
             }
+
+            span.gallery::before,
+            span.gallery::after {
+               content: "Panoramic views";
+               width: inherit;
+            }
+            
+         }
+
+         img.circle {
+            position: absolute;
+            z-index: -3;
+            height: 11rem;
+            top: -3.3rem;
+            right: -1rem;
+            animation: rotate 25s linear infinite;
          }
       }
    }

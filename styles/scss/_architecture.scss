@@ -14,15 +14,13 @@
       }
       
       .architectureHeader {
-         justify-content: center;
          position: relative;
          
          h2 {
             margin: 0 0 6rem 0;
 
             span.architecture {
-               line-break: anywhere;
-               width: 36rem;
+               width: 39rem;
             }
             
             span.architecture::before,
@@ -36,9 +34,9 @@
          img.pentagon {
             position: absolute;
             height: 7rem;
-            top: -1.7rem;
+            top: -1.4rem;
+            right: -2.9rem;
             z-index: -3;
-            left: -2.9rem;
             animation: rotate 25s linear infinite;
          }
       }

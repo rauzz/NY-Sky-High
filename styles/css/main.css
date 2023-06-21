@@ -26,14 +26,16 @@ a {
 
 h2 {
   font-family: "VT323", monospace;
-  font-size: 4.4rem;
+  font-size: 4.8rem;
   color: #EEE;
+  text-wrap: balance;
 }
 
 h3 {
   font-family: "VT323", monospace;
   font-size: 3.8rem;
   color: #EEE;
+  text-wrap: balance;
 }
 
 p {
@@ -125,7 +127,20 @@ nav .max1200 {
           justify-content: space-between;
 }
 nav .max1200 img {
-  height: 7rem;
+  height: 5.5rem;
+  padding-left: 1rem;
+}
+nav .max1200 .burger {
+  display: none;
+}
+nav .max1200 .burger .icon {
+  display: none;
+  padding: 1rem;
+  right: 0;
+  z-index: 30;
+}
+nav .max1200 .burger .show {
+  display: block;
 }
 nav .max1200 ul {
   display: -webkit-box;
@@ -138,14 +153,53 @@ nav .max1200 ul {
       -ms-flex-align: center;
           align-items: center;
   gap: 6rem;
+  padding-right: 1rem;
 }
 nav .max1200 ul li {
   list-style: none;
 }
 nav .max1200 ul li a {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #EEE;
+}
+
+.navAside {
+  background-color: rgb(27, 26, 28);
+  position: fixed;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  left: -100vw;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 20;
+  bottom: 0;
+}
+.navAside.active {
+  left: 0;
+}
+.navAside .buttonWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.navAside .buttonWrap a.button {
+  text-decoration: none;
+  font-size: 2.6rem;
+  color: #EEE;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 3rem 0;
 }
 
 #hero {
@@ -171,14 +225,20 @@ nav .max1200 ul li a {
       -ms-flex-align: center;
           align-items: center;
   padding: 10rem 0 5rem 0;
+  overflow: hidden;
 }
 #hero header h1 {
   font-family: "VT323", monospace;
   font-size: 5.8rem;
   text-align: center;
+  text-wrap: balance;
+}
+#hero header h1 span.manhattan {
+  line-break: strict;
 }
 #hero header h1 span.manhattan::before,
 #hero header h1 span.manhattan::after {
+  line-break: strict;
   content: "Manhattan";
 }
 #hero header h4 {
@@ -221,7 +281,7 @@ nav .max1200 ul li a {
           align-items: center;
 }
 #history .historyWrap img.history {
-  width: 56rem;
+  width: 35%;
 }
 #history .historyWrap .historyText header.historyHeader {
   display: inline-block;
@@ -236,8 +296,8 @@ nav .max1200 ul li a {
 }
 #history .historyWrap .historyText header.historyHeader img.hexagon {
   position: absolute;
-  top: -1.7rem;
-  right: 0.4rem;
+  top: -1.5rem;
+  left: 0.3rem;
   z-index: -3;
   height: 7rem;
   -webkit-animation: rotate 25s linear infinite;
@@ -266,17 +326,13 @@ nav .max1200 ul li a {
   text-decoration: underline;
 }
 #architecture .architectureWrap .architectureHeader {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
 #architecture .architectureWrap .architectureHeader h2 {
   margin: 0 0 6rem 0;
 }
 #architecture .architectureWrap .architectureHeader h2 span.architecture {
-  line-break: anywhere;
-  width: 36rem;
+  width: 39rem;
 }
 #architecture .architectureWrap .architectureHeader h2 span.architecture::before,
 #architecture .architectureWrap .architectureHeader h2 span.architecture::after {
@@ -286,9 +342,9 @@ nav .max1200 ul li a {
 #architecture .architectureWrap .architectureHeader img.pentagon {
   position: absolute;
   height: 7rem;
-  top: -1.7rem;
+  top: -1.4rem;
+  right: -2.9rem;
   z-index: -3;
-  left: -2.9rem;
   -webkit-animation: rotate 25s linear infinite;
           animation: rotate 25s linear infinite;
 }
@@ -334,6 +390,9 @@ nav .max1200 ul li a {
           animation: rotate 25s linear infinite;
 }
 
+#iconic {
+  margin-bottom: 10rem;
+}
 #iconic .iconicWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +412,7 @@ nav .max1200 ul li a {
   margin-bottom: 6rem;
 }
 #iconic .iconicWrap .iconicHeader h2 span.iconic {
-  width: 43rem;
+  width: 47rem;
 }
 #iconic .iconicWrap .iconicHeader h2 span.iconic::before,
 #iconic .iconicWrap .iconicHeader h2 span.iconic::after {
@@ -363,7 +422,7 @@ nav .max1200 ul li a {
 #iconic .iconicWrap .iconicHeader img.rectangle {
   position: absolute;
   top: -100%;
-  height: 8rem;
+  height: 9rem;
   left: calc(50% - 3.5rem);
   -webkit-animation: rotate 25s linear infinite;
           animation: rotate 25s linear infinite;
@@ -385,7 +444,7 @@ nav .max1200 ul li a {
   width: 24rem;
 }
 #iconic .iconicWrap .buildingWrap .buildingText {
-  width: 40%;
+  width: 50%;
   margin-left: 3rem;
 }
 #iconic .iconicWrap .buildingWrap .buildingText h3 {
@@ -399,4 +458,49 @@ nav .max1200 ul li a {
 }
 #iconic .iconicWrap .buildingWrap:nth-child(3) .owtcText {
   margin: 0 3rem 0 0;
+}
+
+#gallery .galleryWrap .galleryHeader {
+  position: relative;
+  width: 27rem;
+  margin: 6rem auto 10rem auto;
+}
+#gallery .galleryWrap .galleryHeader h2 {
+  width: 29rem;
+}
+#gallery .galleryWrap .galleryHeader h2 span.gallery {
+  width: inherit;
+}
+#gallery .galleryWrap .galleryHeader h2 span.gallery::before,
+#gallery .galleryWrap .galleryHeader h2 span.gallery::after {
+  content: "Panoramic views";
+  width: inherit;
+}
+#gallery .galleryWrap .galleryHeader img.circle {
+  position: absolute;
+  z-index: -3;
+  height: 11rem;
+  top: -3.3rem;
+  right: -1rem;
+  -webkit-animation: rotate 25s linear infinite;
+          animation: rotate 25s linear infinite;
+}
+
+@media all and (max-width: 880px) {
+  nav .max1200 img {
+    padding-left: 1rem;
+    height: 5.5rem;
+  }
+  nav .max1200 .burger {
+    display: block;
+  }
+  nav .max1200 .burger .icon {
+    display: none;
+  }
+  nav .max1200 .burger .show {
+    display: block;
+  }
+  nav .max1200 ul {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

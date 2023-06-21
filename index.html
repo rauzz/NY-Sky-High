@@ -6,12 +6,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>New York Sky High</title>
    <link rel="stylesheet" href="styles/css/main.css" />
-   <link rel="shortcut icon" href="assets/favicon.png" type="image/png" />
+   <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 </head>
 <body>
    <nav>
       <div class="max1200">
-         <a href="#hero"><img src="assets/logo.svg" /></a>
+         <a href="#hero"><img src="img/logo.svg" /></a>
+         <div class="burger">
+            <img src="img/menu-burger.svg" class="icon show burgerIcon">
+            <img src="img/menu-x.svg" class="icon xIcon">
+         </div>
          <ul>
             <li><a href="#history">History</a></li>
             <li><a href="#architecture">Architecture</a></li>
@@ -20,23 +24,32 @@
          </ul>
       </div>
    </nav>
+   
+   <div class="navAside">
+      <div class="buttonWrap">
+         <a class="button" href="#history">History</a>
+         <a class="button" href="#architecture">Architecture</a>
+         <a class="button" href="#iconic">Iconic Ones</a>
+         <a class="button" href="#gallery">Gallery</a>
+      </div>
+   </div>
 
    <section id="hero">
       <header>
          <h1>Discover the Famous Skyscrapers of <span class="shadow manhattan">Manhattan</span></h1>
          <h4>A Journey Through New York's Towering Landmarks</h4>
-         <a href="#history"><img src="assets/arrow-button.svg" alt="arrow pointing down" /></a>
+         <a href="#history"><img src="img/arrow-button.svg" alt="arrow pointing down" /></a>
       </header>
-      <img class="hero" src="assets/hero.png" alt="Panoramic view of Manhattan" />
+      <img class="hero" src="img/hero.png" alt="Panoramic view of Manhattan" />
    </section>
 
    <section id="history">
       <div class="max1200 historyWrap">
-         <img src="assets/manhattan-history.png" class="history" alt="Old photos of Manhattan" />
+         <img src="img/manhattan-history.png" class="history" alt="Old photos of Manhattan" />
          <div class="historyText">
             <header class="historyHeader">
                <h2><span class="shadow history">A brief look into the past &nbsp;</span></h2>
-               <img src="assets/hexagon-header.svg" class="hexagon" />
+               <img src="img/hexagon-header.svg" class="hexagon" />
             </header>
             <p>
                Manhattan is one of the five boroughs of New York City, located on the island of
@@ -60,13 +73,13 @@
    <section id="architecture">
       <div class="max1200 architectureWrap">
          <header class="architectureHeader">
-            <img src="assets/pentagon-header.svg" class="pentagon">
+            <img src="img/pentagon-header.svg" class="pentagon">
             <h2><span class="shadow architecture">Architectural styles</span></h2>
          </header>
          <div class="artStyle">
             <h3>Art Deco</h3>
             <div class="archWrap">
-               <img src="assets/art-deco.png" alt="Photo of One Wall Street Building">
+               <img src="img/art-deco.png" alt="Photo of One Wall Street Building">
                <p>Established in France in the 1920s, the sleek but not minimal style of Art Deco unmistakably represents the era of the Machine Age. It is a prominent architectural style in New York City, known for its sleek lines, geometric patterns, and luxurious materials. <a href="https://en.wikipedia.org/wiki/1_Wall_Street" target="_blank" class="color1 bold">One Wall Street Building</a> is an awesome example, showcasing the opulence and glamour of the era.</p>
             </div>
          </div>
@@ -74,13 +87,13 @@
             <h3>Beaux-Arts</h3>
             <div class="archWrap">
                <p>It evolved from French classicism as a result of new technologies and modern materials. Beaux-Arts merges the grand essence of classicism’s columns, with the Renaissance style and technological advances; specifically the use of steel and glass to allow light. This style puts an emphasis on symmetry, columnar support, and triangular pediments. <a href="https://en.wikipedia.org/wiki/49_Chambers" target="_blank" class="color2 bold">49 Chambers</a> is direct example of this style.</p>
-               <img src="assets/beaux-arts.png" alt="Photo of 49 Chambers building">
+               <img src="img/beaux-arts.png" alt="Photo of 49 Chambers building">
             </div>
          </div>
          <div class="artStyle">
             <h3>International Style</h3>
             <div class="archWrap">
-               <img src="assets/international-style.png" alt="Photo of The Seagram Building">
+               <img src="img/international-style.png" alt="Photo of The Seagram Building">
                <p>The International Style, marked by simplicity, clean lines, and functionality, had a significant impact on New York City's architectural landscape. It developed in 1920s and 1930s, it was closely related to modernism and is often defined as “modern movement” in architecture. <a href="https://en.wikipedia.org/wiki/Seagram_Building" target="_blank" class="color3 bold">The Seagram Building</a>, designed by Ludwig Mies van der Rohe exemplify this style's minimalist aesthetics and emphasis on glass and steel.</p>
             </div>
          </div>
@@ -88,19 +101,19 @@
             <h3>Cast-Iron</h3>
             <div class="archWrap">
                <p>Cast-iron architecture is a distinctive style that flourished in New York City during the 19th century. It is characterized by the use of cast-iron elements for structural support, decorative embellishments, and facades. This architectural style gained popularity due to its affordability, versatility, and fire-resistant properties. Cast iron style remains an important part of New York's architectural heritage, including <a href="https://en.wikipedia.org/wiki/Gilsey_House" target="_blank" class="color4 bold">The Gisley House</a> on 29th on Broadway.</p>
-               <img src="assets/cast-iron.png" alt="Photo of Gisley House">
+               <img src="img/cast-iron.png" alt="Photo of Gisley House">
             </div>
          </div>
          <div class="artStyle">
             <h3>Gothic Revival</h3>
             <div class="archWrap">
-               <img src="assets/gothic-revival.png" alt="Photo of Cathedral of St. Jogh the Divine">
+               <img src="img/gothic-revival.png" alt="Photo of Cathedral of St. Jogh the Divine">
                <p>Gothic Revival is an architectural style that emerged in the 18th century and experienced a revival in the 19th century. It draws inspiration from medieval Gothic architecture, characterized by pointed arches, ribbed vaults, ornate tracery, and elaborate detailing. In New York City, Gothic Revival architecture can be seen in various structures, particularly religious and educational buildings. The magnificent <a href="https://en.wikipedia.org/wiki/Cathedral_of_St._John_the_Divine" target="_blank" class="color5 bold">Cathedral of St. Jogh the Divine</a>, located in Morningside Heights, showcases the grandeur and intricate detailing of the style.</p>
             </div>
          </div>
          <div class="breakWrap">
-            <img src="assets/brake.svg" class="mainImg">
-            <img src="assets/brake-cross.svg" class="crossImg">
+            <img src="img/brake.svg" class="mainImg">
+            <img src="img/brake-cross.svg" class="crossImg">
          </div>
       </div>
    </section>
@@ -109,27 +122,27 @@
       <div class="max1200 iconicWrap">
          <header class="iconicHeader">
             <h2><span class="shadow iconic">Three most iconic pieces</span></h2>
-            <img src="assets/rectangle-header.svg" class="rectangle">
+            <img src="img/rectangle-header.svg" class="rectangle">
          </header>
          <div class="buildingWrap">
-            <img src="assets/empire-state-building.png" alt="Photo of Empire State Building">
+            <img src="img/empire-state-building.png" alt="Photo of Empire State Building">
             <div class="buildingText">
                <h3>Empire State Building</h3>
-               <p>This colossal monument, located in Midtown Manhattan, was completed in 1931 and held the title of the world's tallest building for nearly 40 years. It stands at a height of 443.2 meters (1,454 feet) and has a total of 102 floors, attracting millions of visitors each year.<br><br>The construction of the building took only one year and 45 days, a remarkable feat considering its size and complexity. The building's distinctive Art Deco design, characterized by its setbacks and impressive spire, has made it an iconic symbol of New York City. It has been featured in numerous films, including the classic "King Kong" (1933) where the giant ape climbed the building's exterior.<br><br>The Empire State Building offers breathtaking views of the city from its observatories on the 86th and 102nd floors, attracting both tourists and locals.<br><br>The top of the building is illuminated by different-colored lights on special occasions, such as red and green for Christmas or pink for Breast Cancer Awareness Month.<br><br>The Empire State Building was designated as a National Historic Landmark in 1986 and remains one of the most recognizable landmarks in the world.</p>
+               <p>This colossal monument, located in Midtown Manhattan, was completed in 1931 and held the title of the world's tallest building for nearly 40 years. It stands at a height of 443.2 meters (1,454 feet) and has a total of 102 floors, attracting millions of visitors each year.<br><br>The construction of the building took only one year and 45 days, a remarkable feat considering its size and complexity. The building's distinctive <span class="color2 bold">Art Deco</span> design, characterized by its setbacks and impressive spire, has made it an iconic symbol of New York City. It has been featured in numerous films, including the classic <span class="color3 bold">"King Kong"</span> (1933) where the giant ape climbed the building's exterior.<br><br>The Empire State Building offers breathtaking views of the city from its observatories on the 86th and 102nd floors, attracting both tourists and locals.<br><br>The top of the building is illuminated by different-colored lights on special occasions, such as red and green for Christmas or pink for Breast Cancer Awareness Month.<br><br>The Empire State Building was designated as a <span class="color5 bold">National Historic Landmark</span> in 1986 and remains one of the most recognizable landmarks in the world.</p>
             </div>
          </div>
          <div class="buildingWrap">
-            <img src="assets/one-world-trade-center.png" alt="Photo of One World Trade Center">
+            <img src="img/one-world-trade-center.png" alt="Photo of One World Trade Center">
             <div class="buildingText owtcText">
                <h3>One World Trade Center</h3>
-               <p>One World Trade Center, also known as the Freedom Tower, is the tallest building in the United States, standing at a height of 541 meters (1776 feet). It was built on the site where the Twin Towers of the World Trade Center once stood before the tragic events of September 11, 2001.<br><br>In addition to its architectural significance, One World Trade Center serves as a memorial and tribute to the victims of the September 11 attacks, with the 9/11 Memorial & Museum located at its base, ensuring their memory is forever honored.<br><br>The building's design features a sleek and modern glass facade, symbolizing resilience and hope for the future. It officially opened to the public in 2014 and serves as a symbol of the city's strength and determination.<br><br>One World Trade Center boasts an observation deck called the One World Observatory, located on the 100th, 101st, and 102nd floors, offering panoramic views of New York City, which you can check down below!<br><br>The building's spire, reaching a height of 124 meters (408 feet), is illuminated at night, creating a stunning and memorable sight on the city's skyline. It houses various offices, including publishing companies, media organizations, and financial firms, contributing to the revitalization of Lower Manhattan.<br><br>One World Trade Center stands as a powerful symbol of resilience, honoring the memory of the lives lost and showcasing the city's indomitable spirit.</p>
+               <p>One World Trade Center, also known as the Freedom Tower, is the tallest building in the United States, standing at a height of 541 meters (1776 feet). It was built on the site where the <span class="color2 bold">Twin Towers</span> of the World Trade Center once stood before the tragic events of September 11, 2001.<br><br>In addition to its architectural significance, One World Trade Center serves as a memorial and tribute to the victims of the September 11 attacks, with the 9/11 <span class="color3 bold">Memorial & Museum</span> located at its base, ensuring their memory is forever honored.<br><br>The building's design features a sleek and modern glass facade, symbolizing resilience and hope for the future. It officially opened to the public in 2014 and serves as a symbol of the city's strength and determination.<br><br>One World Trade Center boasts an observation deck called the <span class="color4 bold">One World Observatory</span>, located on the 100th, 101st, and 102nd floors, offering panoramic views of New York City, which you can check down below!<br><br>The building's spire, reaching a height of 124 meters (408 feet), is illuminated at night, creating a stunning and memorable sight on the city's skyline. It houses various offices, including publishing companies, media organizations, and financial firms, contributing to the revitalization of Lower Manhattan.<br><br>One World Trade Center stands as a powerful symbol of resilience, honoring the memory of the lives lost and showcasing the city's indomitable spirit.</p>
             </div>
          </div>
          <div class="buildingWrap">
-            <img src="assets/chrysler-building.png" alt="Photo of The Chrysler Building">
+            <img src="img/chrysler-building.png" alt="Photo of The Chrysler Building">
             <div class="buildingText">
                <h3>The Chrysler Building</h3>
-               <p>The Chrysler Building, located in Midtown Manhattan, is an iconic skyscraper that has become synonymous with the New York City skyline. The spire of the building is composed of stainless steel arches and reaches a height of 77 floors, standing at  319 meters (1,046 feet).<br><br>Completed in 1930, it held the title of the tallest building in the world for a brief period before being surpassed by the Empire State Building.<br><br>The lobby of the Chrysler Building is adorned with elegant Art Deco elements, including murals, ornamentation, and a stunning ceiling mural depicting scenes of transportation and industry. The building's exterior features intricate ornamentation, including terracotta gargoyles, replicas of Chrysler hood ornaments, and geometric patterns.<br><br>It is renowned for its stunning observation deck on the 61st floor, which was unfortunately closed to the public in 1945. The Chrysler Building has been featured in numerous films and popular culture, solidifying its status as an iconic symbol of New York City.<br><br>Despite no longer holding the title of the tallest building, the Chrysler Building continues to captivate visitors with its timeless elegance and architectural grandeur.</p>
+               <p>The Chrysler Building, located in Midtown Manhattan, is an iconic skyscraper that has become synonymous with the New York City skyline. The spire of the building is composed of stainless steel arches and reaches a height of 77 floors, standing at  319 meters (1,046 feet).<br><br>Completed in 1930, it held the title of the tallest building in the world for a brief period before being surpassed by the Empire State Building.<br><br>The lobby of the Chrysler Building is adorned with elegant <span class="color2 bold">Art Deco</span> elements, including murals, ornamentation, and a stunning ceiling mural depicting scenes of transportation and industry. The building's exterior features intricate ornamentation, including terracotta gargoyles, replicas of <span class="color4 bold">Chrysler hood ornaments</span>, and geometric patterns.<br><br>It is renowned for its stunning observation deck on the 61st floor, which was unfortunately closed to the public in 1945. The Chrysler Building has been featured in numerous films and popular culture, solidifying its status as an iconic symbol of New York City.<br><br>Despite no longer holding the title of the tallest building, the Chrysler Building continues to captivate visitors with its timeless elegance and architectural grandeur.</p>
             </div>
          </div>
       </div>
@@ -139,8 +152,13 @@
       <div class="max1200 galleryWrap">
          <header class="galleryHeader">
             <h2><span class="shadow gallery">Panoramic views</span></h2>
+            <img src="img/circle-header.svg" class="circle">
          </header>
       </div>
    </section>
+
+   <footer>
+   </footer>
+   <script src="js/burgerNav.js"></script>   
 </body>
 </html>

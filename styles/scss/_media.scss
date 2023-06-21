@@ -1,0 +1,32 @@
+@media all and (max-width: 880px) {
+   
+   nav {
+   
+      .max1200 {
+
+   
+         img {
+            padding-left: 1rem;
+            height: 5.5rem;
+         }
+
+         .burger {
+            display: block;
+
+            .icon {
+               display: none;
+            }
+
+            .show {
+               display: block;
+            }
+         }
+         
+         ul {
+            display: none;
+         }
+      }
+   }
+
+
+}
