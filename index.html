@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>New York Sky High</title>
    <link rel="stylesheet" href="lightbox/css/lightbox.css">
-   <!-- <link rel="stylesheet" href="dist/css/glightbox.css" /> -->
    <link rel="stylesheet" href="styles/css/main.css" />
    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 </head>
@@ -40,7 +39,10 @@
       <header>
          <h1>Discover the Famous Skyscrapers of <span class="shadow manhattan">Manhattan</span></h1>
          <h4>A Journey Through New York's Towering Landmarks</h4>
-         <a href="#history"><img src="img/arrow-button.svg" alt="arrow pointing down" /></a>
+         <a href="#history">
+            <img class="arrowBox" src="img/arrow-box.svg">
+            <img class="arrow" src="img/arrow-button-long.svg" alt="arrow pointing down" />
+         </a>
       </header>
       <img class="hero" src="img/hero.png" alt="Panoramic view of Manhattan" />
    </section>
@@ -50,7 +52,7 @@
          <img src="img/manhattan-history.png" class="history" alt="Old photos of Manhattan" />
          <div class="historyText">
             <header class="historyHeader">
-               <h2><span class="shadow history">A brief look into the past &nbsp;</span></h2>
+               <h2><span class="shadow history">Look into the past&nbsp;</span></h2>
                <img src="img/hexagon-header.svg" class="hexagon" />
             </header>
             <p>
@@ -87,7 +89,7 @@
          </div>
          <div class="artStyle">
             <h3>Beaux-Arts</h3>
-            <div class="archWrap">
+            <div class="archWrap arch2">
                <p>It evolved from French classicism as a result of new technologies and modern materials. Beaux-Arts merges the grand essence of classicism’s columns, with the Renaissance style and technological advances; specifically the use of steel and glass to allow light. This style puts an emphasis on symmetry, columnar support, and triangular pediments. <a href="https://en.wikipedia.org/wiki/49_Chambers" target="_blank" class="color2 bold">49 Chambers</a> is direct example of this style.</p>
                <img src="img/beaux-arts.png" alt="Photo of 49 Chambers building">
             </div>
@@ -101,7 +103,7 @@
          </div>
          <div class="artStyle">
             <h3>Cast-Iron</h3>
-            <div class="archWrap">
+            <div class="archWrap arch4">
                <p>Cast-iron architecture is a distinctive style that flourished in New York City during the 19th century. It is characterized by the use of cast-iron elements for structural support, decorative embellishments, and facades. This architectural style gained popularity due to its affordability, versatility, and fire-resistant properties. Cast iron style remains an important part of New York's architectural heritage, including <a href="https://en.wikipedia.org/wiki/Gilsey_House" target="_blank" class="color4 bold">The Gisley House</a> on 29th on Broadway.</p>
                <img src="img/cast-iron.png" alt="Photo of Gisley House">
             </div>
@@ -123,7 +125,7 @@
    <section id="iconic">
       <div class="max1200 iconicWrap">
          <header class="iconicHeader">
-            <h2><span class="shadow iconic">Three most iconic pieces</span></h2>
+            <h2><span class="shadow iconic">Most iconic pieces</span></h2>
             <img src="img/rectangle-header.svg" class="rectangle">
          </header>
          <div class="buildingWrap">
@@ -164,18 +166,34 @@
             <a href="img/gal-5.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-5-thumb.png" alt="Thumbnail"></a>
             <a href="img/gal-6.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-6-thumb.png" alt="Thumbnail"></a>
          </div>
+         <div class="galleryPanelsMobile">
+            <img src="img/gal-1.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+            <img src="img/gal-2.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+            <img src="img/gal-3.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+            <img src="img/gal-4.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+            <img src="img/gal-5.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+            <img src="img/gal-6.png" alt="Panoramic view of Manhattan">
+            <div class="panelLine"></div>
+         </div>
       </div>
    </section>
 
    <footer>
-      <h6>Copyright &copy; Marcin Izdebski 2023</h6>
       <img src="img/footer.svg">
+      <div class="footerWrap">
+         <h6>Copyright &copy; Marcin Izdebski 2023</h6>
+         <a href="https://github.com/rauzz/NY-Sky-High" class="github" target="_blank">GitHub</a>
+      </div>
    </footer>
 
    <script src="js/burgerNav.js"></script>
    <script src="lightbox/js/jquery-3.2.1.min.js"></script>
    <script src="lightbox/js/lightbox.min.js"></script>
-   <!-- <script src="dist/js/glightbox.min.js"></script> -->
    <script>
       lightbox.option({
         'resizeDuration': 100,

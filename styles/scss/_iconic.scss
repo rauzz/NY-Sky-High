@@ -1,14 +1,12 @@
 @import "variables";
 
 #iconic {
-   margin-bottom: 10rem;
+   padding: 17rem 0 8rem 0;
 
    .iconicWrap {
       display: flex;
       flex-direction: column;
       align-items: center;
-
-
 
       .iconicHeader {
          position: relative;
@@ -22,7 +20,7 @@
 
             span.iconic::before,
             span.iconic::after {
-               content: "Three most iconic pieces";
+               content: "Most iconic pieces";
                width: inherit;
             }
          }

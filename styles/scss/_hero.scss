@@ -3,7 +3,7 @@
 #hero  {
    flex-direction: row;
    justify-content: center;
-   padding-top: 7rem;
+   padding: 7rem 0 17rem 0;
 
    header {
       color: $colorWhite;
@@ -15,38 +15,56 @@
       
       h1 {
          font-family: 'VT323', monospace;
-         font-size: 5.8rem;
+         font-size: calc(4rem + 2vw);
          text-align: center;
          text-wrap: balance;
-
+         
          span.manhattan {
             line-break: strict;
+            background: -webkit-linear-gradient(#f7ccff, #ffe0bd);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
          }
          
          span.manhattan::before,
          span.manhattan::after {
             line-break: strict;
             content: 'Manhattan';
-
          }
       }
       
       h4 {
          font-family: 'IBM Plex Mono', monospace;
-         font-size: 2.6rem;
+         font-size: calc(2rem + 0.5vw);
          font-weight: 300;
          padding: 2.6rem 0 8rem 0;
          text-align: center;
       }
 
       a {
-         display: flex;
-         background: $mainGradient;
+         position: relative;
          width: 6rem;
          height: 6rem;
-         justify-content: center;
-         align-items: center;
-
+         overflow: hidden;
+         
+         img.arrowBox {
+            position: absolute;
+            z-index: 2;
+         }
+         
+         img.arrow {
+            position: absolute;
+            bottom: .5rem;
+            left: .6rem;
+            padding: 1.1rem;
+            background-color: $colorBackground;
+            transition: .6s;
+         }
+         
+         &:hover img.arrow {
+            bottom: -24rem;
+         }
       }
    }
 
