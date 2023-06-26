@@ -1,13 +1,14 @@
 @import "variables";
 
 #gallery {
+   margin-bottom: 20rem;
 
    .galleryWrap {
 
       .galleryHeader {
          position: relative;
          width: 27rem;
-         margin: 6rem auto 10rem auto;
+         margin: 6rem auto 13rem auto;
          
          h2 {
             width: 29rem;
@@ -30,8 +31,38 @@
             z-index: -3;
             height: 11rem;
             top: -3.3rem;
-            right: -1rem;
+            right: -2.8rem;
             animation: rotate 25s linear infinite;
+         }
+      }
+
+      .galleryPanels {
+         display: flex;
+         justify-content: space-around;
+         max-width: 83rem;
+         flex-wrap: wrap;
+         gap: 7rem;
+         margin: auto;
+         
+         .glightbox {
+            display: block;
+            position: relative;
+            transition: .2s;
+            
+            &::after {
+               content: "";
+               width: 36rem;
+               height: 36rem;
+               background: $mainGradient;
+               position: absolute;
+               top: 1.2rem;
+               left: 1.2rem;
+               z-index: -100;
+            }
+
+            &:hover {
+               transform: translateY(-1rem);
+            }
          }
       }
    }

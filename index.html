@@ -5,6 +5,8 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>New York Sky High</title>
+   <link rel="stylesheet" href="lightbox/css/lightbox.css">
+   <!-- <link rel="stylesheet" href="dist/css/glightbox.css" /> -->
    <link rel="stylesheet" href="styles/css/main.css" />
    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 </head>
@@ -154,11 +156,34 @@
             <h2><span class="shadow gallery">Panoramic views</span></h2>
             <img src="img/circle-header.svg" class="circle">
          </header>
+         <div class="galleryPanels">
+            <a href="img/gal-1.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-1-thumb.png" alt="Thumbnail"></a>
+            <a href="img/gal-2.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-2-thumb.png" alt="Thumbnail"></a>
+            <a href="img/gal-3.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-3-thumb.png" alt="Thumbnail"></a>
+            <a href="img/gal-4.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-4-thumb.png" alt="Thumbnail"></a>
+            <a href="img/gal-5.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-5-thumb.png" alt="Thumbnail"></a>
+            <a href="img/gal-6.png" class="glightbox" data-lightbox="gallery"><img src="img/gal-6-thumb.png" alt="Thumbnail"></a>
+         </div>
       </div>
    </section>
 
    <footer>
+      <h6>Copyright &copy; Marcin Izdebski 2023</h6>
+      <img src="img/footer.svg">
    </footer>
-   <script src="js/burgerNav.js"></script>   
+
+   <script src="js/burgerNav.js"></script>
+   <script src="lightbox/js/jquery-3.2.1.min.js"></script>
+   <script src="lightbox/js/lightbox.min.js"></script>
+   <!-- <script src="dist/js/glightbox.min.js"></script> -->
+   <script>
+      lightbox.option({
+        'resizeDuration': 100,
+        'wrapAround': true,
+        'maxWidth': 900,
+        'resizeDuration': 200,
+        'imageFadeDuration': 300,
+      })
+  </script>
 </body>
 </html>
