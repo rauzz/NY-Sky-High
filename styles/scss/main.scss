@@ -3,6 +3,7 @@
 
 @import 'variables';
 
+// reset
 * {
    padding: 0;
    margin: 0;
@@ -46,7 +47,7 @@ p {
    font-size: 1.6rem;
    color: $colorWhite;
    font-weight: 300;
-   line-height: 1.5;
+   line-height: 1.6;
 }
 
 .bold {
@@ -57,25 +58,25 @@ span.shadow {
    position: relative;
 }
 
-span.shadow::before {
+span.shadow::before,
+span.shadow::after {
    position: absolute;
-   top: -4px;
-   left: 4px;
    background: -webkit-linear-gradient(#a800c5, #ff9823);
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+}
+
+
+span.shadow::before {
+   top: -4px;
+   left: 4px;
    z-index: -1;
 }
 
 span.shadow::after {
-   position: absolute;
    top: -8px;
    left: 7px;
-   background: -webkit-linear-gradient(#a800c5, #ff9823);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
    z-index: -2;
 }
 
