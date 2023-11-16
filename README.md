@@ -5,9 +5,9 @@ This is a simple one page website featuring Manhattan in a vaporwave style, with
 
 ## Tech
 
-🟠 HTML
-🟣 SCSS
-🟡 JavaScript
+- HTML
+- SCSS
+- JavaScript
 
 Website is fully responsive for mobile devices.
 
