@@ -20,4 +20,4 @@ Website was designed by myself in Figma, you can check it out [here](https://www
 Site can be accessed through github pages [here](https://rauzz.github.io/NY-Sky-High/)
 
 ## License
-[MIT License](https://opensource.org/licenses/MIT){:target="_blank" rel="noopener"}
+[MIT License](https://opensource.org/licenses/MIT)
