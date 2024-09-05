@@ -1,111 +1,113 @@
 // font import
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600&family=VT323&display=swap");
 
-@import 'variables';
+@import "variables";
 
 // reset
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
-   scroll-behavior: smooth;
-   font-size: 10px;
+	scroll-behavior: smooth;
+	font-size: 10px;
 }
 
 body {
-   background-color: $colorBackground;
-   overflow-x: hidden;
+	background-color: $colorBackground;
+	overflow-x: hidden;
 }
 
 .max1200 {
-   max-width: 1200px;
-   margin: auto;
+	max-width: 1200px;
+	margin: auto;
 }
 
 a {
-   text-decoration: none;
+	text-decoration: none;
 }
 
 h2 {
-   font-family: 'VT323', monospace;
-   font-size: 4.8rem;
-   color: $colorWhite;
-   text-wrap: balance;
+	font-family: "VT323", monospace;
+	font-size: 4.8rem;
+	color: $colorWhite;
+	text-wrap: balance;
 }
 
 h3 {
-   font-family: 'VT323', monospace;
-   font-size: 3.4rem;
-   color: $colorWhite;
+	font-family: "VT323", monospace;
+	font-size: 3.4rem;
+	color: $colorWhite;
 }
 
 p {
-   font-family: 'IBM Plex Mono', monospace;
-   font-size: 1.6rem;
-   color: $colorWhite;
-   font-weight: 300;
-   line-height: 1.6;
+	font-family: "IBM Plex Mono", monospace;
+	font-size: 1.6rem;
+	color: $colorWhite;
+	font-weight: 300;
+	line-height: 1.6;
 }
 
 .bold {
-   font-weight: 600;
+	font-weight: 600;
 }
 
 span.shadow {
-   position: relative;
+	position: relative;
 }
 
 span.shadow::before,
 span.shadow::after {
-   position: absolute;
-   background: -webkit-linear-gradient(#a800c5, #ff9823);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+	position: absolute;
+	background: -webkit-linear-gradient(#a800c5, #ff9823);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-
 span.shadow::before {
-   top: -4px;
-   left: 4px;
-   z-index: -1;
+	top: -4px;
+	left: 4px;
+	z-index: -1;
 }
 
 span.shadow::after {
-   top: -8px;
-   left: 7px;
-   z-index: -2;
+	top: -8px;
+	left: 7px;
+	z-index: -2;
 }
 
 .color1 {
-   color: $colorBold1;
+	color: $colorBold1;
 }
 
 .color2 {
-   color: $colorBold2;
+	color: $colorBold2;
 }
 
 .color3 {
-   color: $colorBold3;
+	color: $colorBold3;
 }
 
 .color4 {
-   color: $colorBold4;
+	color: $colorBold4;
 }
 
 .color5 {
-   color: $colorBold5;
+	color: $colorBold5;
+}
+
+::selection {
+   background: #c542dc8e;
 }
 
 @keyframes rotate {
-   100% {
-      rotate: 360deg;
-   }
+	100% {
+		rotate: 360deg;
+	}
 }
-
 
 @import "nav.scss";
 @import "hero.scss";

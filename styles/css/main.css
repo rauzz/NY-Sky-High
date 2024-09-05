@@ -95,6 +95,14 @@ span.shadow::after {
   color: #FC9733;
 }
 
+::-moz-selection {
+  background: rgba(197, 66, 220, 0.5568627451);
+}
+
+::selection {
+  background: rgba(197, 66, 220, 0.5568627451);
+}
+
 @-webkit-keyframes rotate {
   100% {
     rotate: 360deg;
